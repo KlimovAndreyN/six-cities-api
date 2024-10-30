@@ -13,15 +13,25 @@ npm install
 ## Список всех переменных окружения
 
 HOST=localhost - хост где запущен REST-сервер
+
 PORT=5000      - прот где запущен REST-сервер
+
 SALT=abcdefg   - Соль для хэширования паролей
+
 DB_HOST=127.0.0.1  - IP-адресс СУБД
+
 DB_PORT=27017      - порт СУБД
+
 DB_USER=admin      - имя пользователя СУБД
+
 DB_PASSWORD=test   - пароль пользователя СУБД
+
 DB_NAME=six-cities - имя БД в СУБД
+
 STATIC_DIRECTORY_PATH=./static - директория к статичным файлам
+
 UPLOAD_DIRECTORY=./upload      - директория для сохранения загруженных файлов
+
 JWT_SECRET=qazwsxedc - хэш-строка для подписи токенов
 
 ### Запуск проекта
