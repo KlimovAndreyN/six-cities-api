@@ -36,6 +36,12 @@ bootstrap();
   5. что еще придумать! getRandomStringEnumValue и убрать "as UserType" и "as CityName" хотябы в tsv.offer-generator.ts
 
 Сделать:
+  1. Забыл обработать название города при получении премиум объявлений
+      на клиенте переделать запрос
+        api.get<Offer[]>(`${ApiRoute.Premium}?city=${cityName}`)
+      на
+        api.get<Offer[]>(`${ApiRoute.Premium}&city=${cityName}`)
+      на бэке обработать имя города
 
 Замечания по клиентской части:
   1. После удаления предложения нет обновления списка предложений и списка избранных предложений с сервера
